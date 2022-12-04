@@ -8,6 +8,7 @@ public class ValidParentheses {
             if(c == '(')l++;
             if(c == ')')f++;
         }
+        if(l==0 || f==0)return false;
         if(l==f)return true;
         else return false;
 
@@ -19,5 +20,7 @@ public class ValidParentheses {
         print(validParentheses( "32423(sgsdg)" ));
         print(validParentheses( "(dsgdsg))2432" ));
         print(validParentheses( "adasdasfa" ));
+        print(validParentheses(" "));
+        print(validParentheses(" yE/?jin=` "));
     }
 }
